@@ -88,5 +88,7 @@ namespace ValhallaLootList.ItemImporter
         public bool HasSpecial { get; set; }
 
         public Classes? UsableClasses { get; set; }
+
+        public bool IsUnique { get; set; }
     }
 }

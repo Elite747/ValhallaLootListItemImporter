@@ -300,6 +300,9 @@ namespace ValhallaLootList.ItemImporter
                 item.UsableClasses = (classes & allClasses);
             }
 
+            // 524288 flag = 'unique-equipped'
+            item.IsUnique = itemTemplate.Maxcount == 1 || (itemTemplate.Flags & 524288U) != 0;
+
             _logger.LogInformation($"Finished parsing Item #{id}. '{item.Name}' will be added.");
             return item;
         }
