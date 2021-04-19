@@ -24612,7 +24612,8 @@
     "HasOnUse": false,
     "HasSpecial": false,
     "UsableClasses": null,
-    "IsUnique": true
+    "IsUnique": true,
+    "QuestId": 11002
   },
   {
     "Id": 28792,
@@ -24837,7 +24838,8 @@
     "HasOnUse": false,
     "HasSpecial": false,
     "UsableClasses": null,
-    "IsUnique": true
+    "IsUnique": true,
+    "QuestId": 11007
   },
   {
     "Id": 30015,

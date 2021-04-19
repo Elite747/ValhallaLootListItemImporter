@@ -1,6 +1,8 @@
 ﻿// Copyright (C) 2021 Donovan Sullivan
 // GNU General Public License v3.0+ (see LICENSE or https://www.gnu.org/licenses/gpl-3.0.txt)
 
+using System.Text.Json.Serialization;
+
 namespace ValhallaLootList.ItemImporter
 {
     public class SeedItem
@@ -90,5 +92,8 @@ namespace ValhallaLootList.ItemImporter
         public Classes? UsableClasses { get; set; }
 
         public bool IsUnique { get; set; }
+
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+        public uint QuestId { get; set; }
     }
 }
