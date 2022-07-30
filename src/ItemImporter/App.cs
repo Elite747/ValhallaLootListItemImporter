@@ -1,37 +1,28 @@
 ﻿// Copyright (C) 2021 Donovan Sullivan
 // GNU General Public License v3.0+ (see LICENSE or https://www.gnu.org/licenses/gpl-3.0.txt)
 
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ValhallaLootList.ItemImporter.WarcraftDatabase;
 
 namespace ValhallaLootList.ItemImporter
 {
-    internal class App : IHostedService
+    internal class App
     {
         private readonly ILogger<App> _logger;
-        private readonly WowDataContext _wowContext;
+        private readonly TypedDataContext _wowContext;
         private readonly Config _config;
-        private readonly IHostApplicationLifetime _hostApplicationLifetime;
         private readonly List<ItemTemplate> _itemTemplates;
         private readonly List<SpellTemplate> _spellTemplates;
 
-        public App(ILogger<App> logger, IOptions<Config> config, WowDataContext wowContext, IHostApplicationLifetime hostApplicationLifetime)
+        public App(ILogger<App> logger, IOptions<Config> config, TypedDataContext wowContext)
         {
             _logger = logger;
             _wowContext = wowContext;
             _config = config.Value;
-            _hostApplicationLifetime = hostApplicationLifetime;
             _itemTemplates = new();
             _spellTemplates = new();
         }
@@ -46,18 +37,26 @@ namespace ValhallaLootList.ItemImporter
 
             foreach (var itemId in await LoadItemsFromSeedInstancesAsync(cancellationToken))
             {
-                _logger.LogDebug($"Discovered Item #{itemId}");
-                var item = ParseItem(itemId, null);
-                if (item is not null)
+                _logger.LogDebug("Discovered Item #{itemId}", itemId);
+
+                if (!items.Any(x => x.Id == itemId) && ParseItem(itemId, null) is { } item)
                 {
                     items.Add(item);
+                }
 
-                    if (_config.Tokens.TryGetValue(itemId, out var tokenRewards))
+                if (_config.Tokens.TryGetValue(itemId, out var tokenRewards))
+                {
+                    foreach (var tokenRewardId in tokenRewards)
                     {
-                        foreach (var tokenRewardId in tokenRewards)
+                        _logger.LogDebug("Discovered Item #{tokenRewardId} as a reward from token #{itemId}.", tokenRewardId, itemId);
+
+                        if (items.Find(item => item.Id == tokenRewardId) is { } tokenReward)
                         {
-                            _logger.LogDebug($"Discovered Item #{tokenRewardId} as a reward from token #{itemId}.");
-                            var tokenReward = ParseItem(tokenRewardId, itemId);
+                            tokenReward.RewardFromId = itemId;
+                        }
+                        else
+                        {
+                            tokenReward = ParseItem(tokenRewardId, itemId);
                             if (tokenReward is not null)
                             {
                                 items.Add(tokenReward);
@@ -67,19 +66,11 @@ namespace ValhallaLootList.ItemImporter
                 }
             }
 
-            _logger.LogInformation($"Parsed {items.Count} items. Saving to seed file.");
+            _logger.LogInformation("Parsed {count} items. Saving to seed file.", items.Count);
 
             await SaveItemsSeedAsync(items, cancellationToken);
 
             _logger.LogDebug("App finished");
-            _hostApplicationLifetime.StopApplication();
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            _logger.LogInformation("App stopped");
-
-            return Task.CompletedTask;
         }
 
         private async Task LoadTablesIntoMemoryAsync(CancellationToken cancellationToken)
@@ -96,13 +87,13 @@ namespace ValhallaLootList.ItemImporter
             using var fs = File.OpenRead(_config.SeedInstancesPath);
             var instances = await JsonSerializer.DeserializeAsync<List<SeedInstance>>(fs, cancellationToken: cancellationToken);
             Debug.Assert(instances?.Count > 0);
-            return instances.SelectMany(i => i.Encounters).SelectMany(e => e.Items).Distinct().OrderBy(id => id);
+            return instances.SelectMany(i => i.Encounters).SelectMany(e => e.Items10.Concat(e.Items10H).Concat(e.Items25).Concat(e.Items25H)).Distinct().OrderBy(id => id);
         }
 
         private async Task SaveItemsSeedAsync(List<SeedItem> items, CancellationToken cancellationToken)
         {
             using var fs = File.Create(_config.SeedItemsPath);
-            await JsonSerializer.SerializeAsync(fs, items, new() { WriteIndented = true }, cancellationToken);
+            await JsonSerializer.SerializeAsync(fs, items, options: new() { WriteIndented = true }, cancellationToken: cancellationToken);
         }
 
         private SeedItem? ParseItem(uint id, uint? tokenId)
@@ -111,19 +102,22 @@ namespace ValhallaLootList.ItemImporter
 
             if (itemTemplate is null)
             {
-                _logger.LogWarning($"Item with ID {id} was not found! Item will not be parsed.");
+                _logger.LogWarning("Item with ID {id} was not found! Item will not be parsed.", id);
                 return null;
             }
 
             if (itemTemplate.Quality != 4)
             {
-                _logger.LogWarning($"'{itemTemplate.Name}' ({id}) is not epic quality. Item will not be parsed.");
+                _logger.LogWarning("'{name}' ({id}) is not epic quality. Item will not be parsed.", itemTemplate.Name, id);
                 return null;
             }
 
-            var item = new SeedItem { Id = id, RewardFromId = tokenId };
-
-            item.Name = itemTemplate.Name;
+            var item = new SeedItem
+            {
+                Id = id,
+                RewardFromId = tokenId,
+                Name = itemTemplate.Name
+            };
 
             switch (itemTemplate.InventoryType)
             {
@@ -245,20 +239,11 @@ namespace ValhallaLootList.ItemImporter
                     };
                     break;
                 default:
-                    _logger.LogWarning($"'{itemTemplate.Name}' ({itemTemplate.Entry}) has an unexpected InventoryType value of {itemTemplate.InventoryType}!");
+                    _logger.LogWarning("'{name}' ({entry}) has an unexpected InventoryType value of {inventoryType}!", itemTemplate.Name, itemTemplate.Entry, itemTemplate.InventoryType);
                     break;
             }
 
             item.ItemLevel = itemTemplate.ItemLevel;
-
-            if (itemTemplate.DmgMax1 > 0)
-            {
-                item.TopEndDamage = (int)itemTemplate.DmgMax1;
-                item.Speed = ((double)itemTemplate.Delay / 1000.0);
-                item.DPS = (itemTemplate.DmgMax1 + itemTemplate.DmgMin1) / 2 / item.Speed;
-            }
-
-            item.Armor = itemTemplate.Armor;
 
             ParsePrimaryStat(item, itemTemplate.StatType1, itemTemplate.StatValue1);
             ParsePrimaryStat(item, itemTemplate.StatType2, itemTemplate.StatValue2);
@@ -276,10 +261,6 @@ namespace ValhallaLootList.ItemImporter
             ParseSpell(item, itemTemplate.Spellid3, itemTemplate.Spelltrigger3);
             ParseSpell(item, itemTemplate.Spellid4, itemTemplate.Spelltrigger4);
             ParseSpell(item, itemTemplate.Spellid5, itemTemplate.Spelltrigger5);
-
-            if (itemTemplate.SocketColor1 != 0) item.Sockets++;
-            if (itemTemplate.SocketColor2 != 0) item.Sockets++;
-            if (itemTemplate.SocketColor3 != 0) item.Sockets++;
 
             var classes = (Classes)itemTemplate.AllowableClass;
 
@@ -305,7 +286,7 @@ namespace ValhallaLootList.ItemImporter
 
             item.QuestId = itemTemplate.Startquest;
 
-            _logger.LogInformation($"Finished parsing Item #{id}. '{item.Name}' will be added.");
+            _logger.LogInformation("Finished parsing Item #{id}. '{name}' will be added.", id, item.Name);
             return item;
         }
 
@@ -313,7 +294,9 @@ namespace ValhallaLootList.ItemImporter
         {
             switch (id)
             {
-                case 0: return;
+                case 0:
+                case 1:
+                case 46: return;
                 case 3: item.Agility = value; return;
                 case 4: item.Strength = value; return;
                 case 5: item.Intellect = value; return;
@@ -323,18 +306,17 @@ namespace ValhallaLootList.ItemImporter
                 case 13: item.Dodge = value; return;
                 case 14: item.Parry = value; return;
                 case 15: item.BlockRating = value; return;
-                case 18: item.SpellHit = value; return;
-                case 19: item.MeleeCrit = value; return;
-                case 20: item.RangedCrit = value; return;
-                case 21: item.SpellCrit = value; return;
-                case 30: item.SpellHaste = value; return;
-                case 31: item.PhysicalHit = value; return;
-                case 32: item.MeleeCrit = item.RangedCrit = value; return;
-                case 35: item.Resilience = value; return;
+                case 31: item.Hit = value; return;
+                case 32: item.Crit = value; return;
                 case 36: item.Haste = value; return;
                 case 37: item.Expertise = value; return;
+                case 38: item.AttackPower = value; return;
+                case 43: item.ManaPer5 = value; return;
+                case 44: item.ArmorPenetration = value; return;
+                case 45: item.SpellPower = value; return;
+                case 48: item.BlockValue = value; return;
                 default:
-                    _logger.LogWarning($"'{item.Name}' ({item.Id}) has an unknown primary stat of {id}: {value}.");
+                    _logger.LogWarning("'{itemName}' ({itemId}) has an unknown primary stat of {id}: {value}.", item.Name, item.Id, id, value);
                     return;
             }
         }
@@ -346,19 +328,17 @@ namespace ValhallaLootList.ItemImporter
                 return;
             }
 
-            _logger.LogInformation($"Looking up spell for Item #{item.Id}...");
-
             var spell = _spellTemplates.Find(spell => spell.Id == spellId);
 
             if (spell is null)
             {
-                _logger.LogError($"'{item.Name}' ({item.Id}) has an unknown spell #{spellId}!");
+                _logger.LogError("'{itemName}' ({itemId}) has an unknown spell #{spellId}!", item.Name, item.Id, spellId);
                 return;
             }
 
             if (trigger == 0) // on-use
             {
-                _logger.LogWarning($"'{item.Name}' ({item.Id}) has an on-use effect that will prevent auto-determination!");
+                _logger.LogWarning("'{itemName}' ({itemId}) has an on-use effect that will prevent auto-determination!", item.Name, item.Id);
                 item.HasOnUse = true;
             }
             if (trigger == 1) // passive
@@ -369,18 +349,16 @@ namespace ValhallaLootList.ItemImporter
             }
             else if (trigger == 2) // on-hit
             {
-                _logger.LogWarning($"'{item.Name}' ({item.Id}) has a proc effect that will prevent auto-determination!");
+                _logger.LogWarning("'{itemName}' ({itemId}) has a proc effect that will prevent auto-determination!", item.Name, item.Id);
                 item.HasProc = true;
             }
-
-            _logger.LogInformation($"Finished parsing spell '{spell.SpellName}' for item '{item.Name}'.");
         }
 
         private void ParseSpellEffect(SeedItem item, int basePoints, uint auraName, uint triggerSpell, int miscValue)
         {
             if (triggerSpell > 0)
             {
-                _logger.LogWarning($"'{item.Name}' ({item.Id}) has a spell proc effect that will prevent auto-determination!");
+                _logger.LogWarning("'{itemName}' ({itemId}) has a spell proc effect that will prevent auto-determination!", item.Name, item.Id);
                 item.HasProc = true;
                 return;
             }
@@ -391,25 +369,16 @@ namespace ValhallaLootList.ItemImporter
                 case 13:
                     if (miscValue == 126)
                     {
-                        // void star talisman breaks this rule and reports spellpower as healing power. No idea why. Bug in the game possibly?
-                        // Easier to just manually override this one item as it's the only one in TBC loot that has this exception.
-                        if (item.Id == 30449)
-                        {
-                            item.SpellPower = 1 + basePoints;
-                        }
-                        else
-                        {
-                            item.HealingPower = 1 + basePoints;
-                        }
+                        item.SpellPower = 1 + basePoints;
                     }
                     else
                     {
-                        _logger.LogWarning($"'{item.Name}' ({item.Id}) has a special effect that will prevent auto-determination!");
+                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
                         item.HasSpecial = true;
                     }
                     return;
                 case 85: item.ManaPer5 = 1 + basePoints; return;
-                case 99: item.MeleeAttackPower = 1 + basePoints; return;
+                case 99: item.AttackPower = 1 + basePoints; return;
                 case 123:
                     if (miscValue is 1)
                     {
@@ -421,11 +390,11 @@ namespace ValhallaLootList.ItemImporter
                     }
                     else
                     {
-                        _logger.LogWarning($"'{item.Name}' ({item.Id}) has a special effect that will prevent auto-determination!");
+                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
                         item.HasSpecial = true;
                     }
                     return;
-                case 124: item.RangedAttackPower = 1 + basePoints; return;
+                case 124: item.AttackPower = 1 + basePoints; return;
                 case 135:
                     if (miscValue == 126)
                     {
@@ -433,7 +402,7 @@ namespace ValhallaLootList.ItemImporter
                     }
                     else
                     {
-                        _logger.LogWarning($"'{item.Name}' ({item.Id}) has a special effect that will prevent auto-determination!");
+                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
                         item.HasSpecial = true;
                     }
                     return;
@@ -445,7 +414,7 @@ namespace ValhallaLootList.ItemImporter
                 case 234: // 35126 = silence resistance
                 default:
                     item.HasSpecial = true;
-                    _logger.LogWarning($"'{item.Name}' ({item.Id}) has a special effect that will prevent auto-determination!");
+                    _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
                     return;
             }
         }
