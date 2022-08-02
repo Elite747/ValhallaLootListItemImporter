@@ -408,6 +408,7 @@ namespace ValhallaLootList.ItemImporter
                     }
                     return;
                 case 158: item.BlockValue += 1 + basePoints; return;
+                case 189: item.ArmorPenetration = 1 + basePoints; return;
                 case 4: // 38320 = improved seal of light
                 case 107: // 38321 = improve healing touch
                 case 108: // 37447 = improved mana gem
