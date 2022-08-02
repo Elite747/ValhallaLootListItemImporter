@@ -212,6 +212,7 @@ namespace ValhallaLootList.ItemImporter
                         7 => ItemType.Libram,
                         8 => ItemType.Idol,
                         9 => ItemType.Totem,
+                        10 or 21 => ItemType.Sigil,
                         _ => default
                     };
                     break;
