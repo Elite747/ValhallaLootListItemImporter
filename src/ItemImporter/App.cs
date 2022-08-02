@@ -317,7 +317,7 @@ namespace ValhallaLootList.ItemImporter
                 case 45: item.SpellPower = value; return;
                 case 48: item.BlockValue = value; return;
                 default:
-                    _logger.LogWarning("'{itemName}' ({itemId}) has an unknown primary stat of {id}: {value}.", item.Name, item.Id, id, value);
+                    _logger.LogWarning("({itemId}) {itemName} has an unknown primary stat of {id}: {value}.", item.Id, item.Name, id, value);
                     return;
             }
         }
@@ -333,13 +333,13 @@ namespace ValhallaLootList.ItemImporter
 
             if (spell is null)
             {
-                _logger.LogError("'{itemName}' ({itemId}) has an unknown spell #{spellId}!", item.Name, item.Id, spellId);
+                _logger.LogError("({itemId}) {itemName} has an unknown spell #{spellId}!", item.Id, item.Name, spellId);
                 return;
             }
 
             if (trigger == 0) // on-use
             {
-                _logger.LogWarning("'{itemName}' ({itemId}) has an on-use effect that will prevent auto-determination!", item.Name, item.Id);
+                _logger.LogWarning("({itemId}) {itemName} has an on-use effect that will prevent auto-determination!", item.Id, item.Name);
                 item.HasOnUse = true;
             }
             if (trigger == 1) // passive
@@ -350,7 +350,7 @@ namespace ValhallaLootList.ItemImporter
             }
             else if (trigger == 2) // on-hit
             {
-                _logger.LogWarning("'{itemName}' ({itemId}) has a proc effect that will prevent auto-determination!", item.Name, item.Id);
+                _logger.LogWarning("({itemId}) {itemName} has a proc effect that will prevent auto-determination!", item.Id, item.Name);
                 item.HasProc = true;
             }
         }
@@ -359,7 +359,7 @@ namespace ValhallaLootList.ItemImporter
         {
             if (triggerSpell > 0)
             {
-                _logger.LogWarning("'{itemName}' ({itemId}) has a spell proc effect that will prevent auto-determination!", item.Name, item.Id);
+                _logger.LogWarning("({itemId}) {itemName} has a spell proc effect that will prevent auto-determination!", item.Id, item.Name);
                 item.HasProc = true;
                 return;
             }
@@ -374,7 +374,7 @@ namespace ValhallaLootList.ItemImporter
                     }
                     else
                     {
-                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
+                        _logger.LogWarning("({itemId}) {itemName} has a special effect that will prevent auto-determination!", item.Id, item.Name);
                         item.HasSpecial = true;
                     }
                     return;
@@ -391,7 +391,7 @@ namespace ValhallaLootList.ItemImporter
                     }
                     else
                     {
-                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
+                        _logger.LogWarning("({itemId}) {itemName} has a special effect that will prevent auto-determination!", item.Id, item.Name);
                         item.HasSpecial = true;
                     }
                     return;
@@ -403,7 +403,7 @@ namespace ValhallaLootList.ItemImporter
                     }
                     else
                     {
-                        _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
+                        _logger.LogWarning("({itemId}) {itemName} has a special effect that will prevent auto-determination!", item.Id, item.Name);
                         item.HasSpecial = true;
                     }
                     return;
@@ -416,7 +416,7 @@ namespace ValhallaLootList.ItemImporter
                 case 234: // 35126 = silence resistance
                 default:
                     item.HasSpecial = true;
-                    _logger.LogWarning("'{itemName}' ({itemId}) has a special effect that will prevent auto-determination!", item.Name, item.Id);
+                    _logger.LogWarning("({itemId}) {itemName} has a special effect that will prevent auto-determination!", item.Id, item.Name);
                     return;
             }
         }
