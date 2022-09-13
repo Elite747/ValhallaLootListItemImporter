@@ -13244,7 +13244,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -13436,7 +13436,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -13468,7 +13468,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -13948,7 +13948,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -14140,7 +14140,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -14172,7 +14172,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -14652,7 +14652,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -14844,7 +14844,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -14876,7 +14876,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -15356,7 +15356,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -15548,7 +15548,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -15580,7 +15580,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -16060,7 +16060,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -16252,7 +16252,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -16284,7 +16284,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -16764,7 +16764,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -16956,7 +16956,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -16988,7 +16988,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -17468,7 +17468,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -17660,7 +17660,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -17692,7 +17692,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -18172,7 +18172,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -18364,7 +18364,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -18396,7 +18396,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -18876,7 +18876,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -19068,7 +19068,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -19100,7 +19100,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -19580,7 +19580,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -19772,7 +19772,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -19804,7 +19804,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -20406,262 +20406,6 @@
     "SpellPower": 0,
     "ManaPer5": 0,
     "AttackPower": 196,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44657,
-    "Name": "Torque of the Red Dragonflight",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 213,
-    "Strength": 0,
-    "Agility": 0,
-    "Stamina": 42,
-    "Intellect": 43,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 30,
-    "Haste": 0,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 56,
-    "ManaPer5": 19,
-    "AttackPower": 0,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44658,
-    "Name": "Chain of the Ancient Wyrm",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 213,
-    "Strength": 0,
-    "Agility": 0,
-    "Stamina": 42,
-    "Intellect": 43,
-    "Spirit": 0,
-    "Hit": 30,
-    "Crit": 0,
-    "Haste": 37,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 56,
-    "ManaPer5": 0,
-    "AttackPower": 0,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44659,
-    "Name": "Pendant of the Dragonsworn",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 213,
-    "Strength": 0,
-    "Agility": 38,
-    "Stamina": 55,
-    "Intellect": 0,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 35,
-    "Haste": 0,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 0,
-    "ManaPer5": 0,
-    "AttackPower": 96,
-    "Expertise": 0,
-    "ArmorPenetration": 28,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44660,
-    "Name": "Drakescale Collar",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 213,
-    "Strength": 56,
-    "Agility": 0,
-    "Stamina": 72,
-    "Intellect": 0,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 0,
-    "Haste": 0,
-    "Defense": 25,
-    "Dodge": 0,
-    "BlockRating": 24,
-    "BlockValue": 0,
-    "Parry": 30,
-    "SpellPower": 0,
-    "ManaPer5": 0,
-    "AttackPower": 0,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44661,
-    "Name": "Wyrmrest Necklace of Power",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 226,
-    "Strength": 0,
-    "Agility": 0,
-    "Stamina": 46,
-    "Intellect": 48,
-    "Spirit": 0,
-    "Hit": 33,
-    "Crit": 0,
-    "Haste": 43,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 64,
-    "ManaPer5": 0,
-    "AttackPower": 0,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44662,
-    "Name": "Life-Binder\u0027s Locket",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 226,
-    "Strength": 0,
-    "Agility": 0,
-    "Stamina": 46,
-    "Intellect": 48,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 35,
-    "Haste": 0,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 64,
-    "ManaPer5": 20,
-    "AttackPower": 0,
-    "Expertise": 0,
-    "ArmorPenetration": 0,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44664,
-    "Name": "Favor of the Dragon Queen",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 226,
-    "Strength": 0,
-    "Agility": 42,
-    "Stamina": 63,
-    "Intellect": 0,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 41,
-    "Haste": 0,
-    "Defense": 0,
-    "Dodge": 0,
-    "BlockRating": 0,
-    "BlockValue": 0,
-    "Parry": 0,
-    "SpellPower": 0,
-    "ManaPer5": 0,
-    "AttackPower": 110,
-    "Expertise": 0,
-    "ArmorPenetration": 31,
-    "SpellPenetration": 0,
-    "HasProc": false,
-    "HasOnUse": false,
-    "HasSpecial": false,
-    "UsableClasses": null,
-    "IsUnique": false
-  },
-  {
-    "Id": 44665,
-    "Name": "Nexus War Champion Beads",
-    "RewardFromId": null,
-    "Slot": 2,
-    "Type": 0,
-    "ItemLevel": 226,
-    "Strength": 63,
-    "Agility": 0,
-    "Stamina": 94,
-    "Intellect": 0,
-    "Spirit": 0,
-    "Hit": 0,
-    "Crit": 0,
-    "Haste": 0,
-    "Defense": 28,
-    "Dodge": 0,
-    "BlockRating": 28,
-    "BlockValue": 0,
-    "Parry": 34,
-    "SpellPower": 0,
-    "ManaPer5": 0,
-    "AttackPower": 0,
     "Expertise": 0,
     "ArmorPenetration": 0,
     "SpellPenetration": 0,
@@ -30012,7 +29756,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -30204,7 +29948,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -30236,7 +29980,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -30716,7 +30460,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -30908,7 +30652,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -30940,7 +30684,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -31420,7 +31164,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -31612,7 +31356,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -31644,7 +31388,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -32124,7 +31868,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -32316,7 +32060,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -32348,7 +32092,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -32828,7 +32572,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -33020,7 +32764,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -33052,7 +32796,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -33532,7 +33276,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -33724,7 +33468,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -33756,7 +33500,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -34236,7 +33980,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -34428,7 +34172,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -34460,7 +34204,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -34940,7 +34684,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -35132,7 +34876,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -35164,7 +34908,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -35644,7 +35388,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -35836,7 +35580,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -35868,7 +35612,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -36348,7 +36092,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -36540,7 +36284,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -36572,7 +36316,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48414,7 +48158,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48446,7 +48190,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48478,7 +48222,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48510,7 +48254,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48542,7 +48286,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48574,7 +48318,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48606,7 +48350,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48638,7 +48382,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48670,7 +48414,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -48702,7 +48446,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51486,7 +51230,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51518,7 +51262,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51550,7 +51294,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51582,7 +51326,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51614,7 +51358,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51646,7 +51390,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51678,7 +51422,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51710,7 +51454,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51742,7 +51486,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -51774,7 +51518,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -56542,7 +56286,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -57374,7 +57118,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57406,7 +57150,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57438,7 +57182,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57470,7 +57214,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57502,7 +57246,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57534,7 +57278,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57566,7 +57310,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57598,7 +57342,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57630,7 +57374,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -57662,7 +57406,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58494,7 +58238,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58526,7 +58270,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58558,7 +58302,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58590,7 +58334,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58622,7 +58366,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58654,7 +58398,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58686,7 +58430,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58718,7 +58462,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58750,7 +58494,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -58782,7 +58526,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -63614,7 +63358,7 @@
     "HasProc": true,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 3,
+    "UsableClasses": 35,
     "IsUnique": true
   },
   {
@@ -64414,7 +64158,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -64446,7 +64190,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -64606,7 +64350,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -64638,7 +64382,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -65534,7 +65278,7 @@
     "HasProc": true,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 3,
+    "UsableClasses": 35,
     "IsUnique": true
   },
   {
@@ -83743,7 +83487,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -84575,7 +84319,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84607,7 +84351,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84639,7 +84383,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84671,7 +84415,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84703,7 +84447,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84735,7 +84479,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84767,7 +84511,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84799,7 +84543,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84831,7 +84575,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -84863,7 +84607,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -86879,7 +86623,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 1160,
+    "UsableClasses": 1192,
     "IsUnique": false
   },
   {
@@ -87711,7 +87455,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87743,7 +87487,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87775,7 +87519,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87807,7 +87551,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87839,7 +87583,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87871,7 +87615,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87903,7 +87647,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87935,7 +87679,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87967,7 +87711,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {
@@ -87999,7 +87743,7 @@
     "HasProc": false,
     "HasOnUse": false,
     "HasSpecial": false,
-    "UsableClasses": 0,
+    "UsableClasses": 32,
     "IsUnique": false
   },
   {

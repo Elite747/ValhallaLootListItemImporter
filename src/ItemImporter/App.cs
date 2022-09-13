@@ -277,7 +277,8 @@ namespace ValhallaLootList.ItemImporter
                     Classes.Rogue |
                     Classes.Shaman |
                     Classes.Warlock |
-                    Classes.Warrior;
+                    Classes.Warrior |
+                    Classes.DeathKnight;
 
                 item.UsableClasses = (classes & allClasses);
             }
